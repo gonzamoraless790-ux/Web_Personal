@@ -1,39 +1,2632 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html lang="es" class="dark">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VS Code Git Warning</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preload"
+      as="image"
+      href="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/960px-Adobe_Photoshop_CC_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/1280px-Adobe_After_Effects_CC_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://www.nicepng.com/png/full/321-3217920_cinema-4d-logo-maxon-cinema-4d-logo-vector.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://cdn.simpleicons.org/wordpress/21759B"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://cdn.simpleicons.org/html5/E34F26"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://cdn.simpleicons.org/php/777BB4"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://cdn.simpleicons.org/github/FFFFFF"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+      data-precedence="default"
+    />
+    <title>
+      Gonzalo Morales — Portfolio de Diseño Gráfico y creatividad digital
+    </title>
+    <meta
+      name="description"
+      content="Portfolio personal y CV de Gonzalo Morales. Especializado en branding, identidad visual, diseño gráfico y creatividad digital con una mirada progresiva hacia la web."
+    />
+    <meta
+      property="og:title"
+      content="Gonzalo Morales — Portfolio de Diseño Gráfico y creatividad digital"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio personal y CV de Gonzalo Morales. Especializado en branding, identidad visual, diseño gráfico y creatividad digital con una mirada progresiva hacia la web."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Gonzalo Morales — Portfolio de Diseño Gráfico y creatividad digital"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio personal y CV de Gonzalo Morales. Especializado en branding, identidad visual, diseño gráfico y creatividad digital con una mirada progresiva hacia la web."
+    />
+    <link rel="modulepreload" href="/assets/index-D5eGLUbL.js" />
+    <link rel="modulepreload" href="/assets/index-CXnmn3Zg.js" />
+    <link
+      rel="modulepreload"
+      href="/assets/portfolioLocalization-Co5AGJjT.js"
+    />
+    <link rel="modulepreload" href="/assets/ContactSection-BdVqaqxC.js" />
+    <link rel="modulepreload" href="/assets/CvModal-g9lflYpl.js" />
+    <link rel="modulepreload" href="/assets/ProjectsSection-DjQ77iu3.js" />
+    <link rel="modulepreload" href="/assets/layers-C9xq0E23.js" />
   </head>
-  <body>
-    <div class="terminal-sheen" aria-hidden="true">
-      <div class="line"><span>0%</span> <span>0</span> <span>0</span> <span>#</span></div>
-      <div class="line"><span>0%</span> <span>0</span> <span>#</span> <span>#!</span></div>
-    </div>
-
-    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
-      <div class="titlebar">
-        <span id="dialog-title">Visual Studio Code</span>
-        <button class="close-button" aria-label="Close">×</button>
-      </div>
-
-      <div class="dialog-body">
-        <div class="warning-icon" aria-hidden="true">
-          <span></span>
+  <body
+    class="min-h-screen bg-[#0a111a] text-[#edf3f8] selection:bg-[#78b8f2] selection:text-[#09131e] antialiased"
+  >
+    <header
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6 bg-transparent"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between"
+      >
+        <a
+          class="group flex items-center gap-3 text-white transition-opacity hover:opacity-90 active"
+          href="/"
+          data-status="active"
+          aria-current="page"
+          ><div
+            class="w-9 h-9 rounded-lg bg-white/[0.06] border border-white/15 flex items-center justify-center font-mono-code text-sm font-semibold text-white group-hover:border-[#78b8f2]/60 transition-colors"
+          >
+            GM
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="text-sm font-semibold tracking-tight text-white flex items-center gap-1.5"
+              >Gonzalo Morales<span
+                class="w-1.5 h-1.5 rounded-full bg-[#78b8f2]"
+              ></span></span
+            ><span class="text-[11px] text-[#9ca3af] font-mono-code -mt-0.5"
+              >Diseñador Gráfico</span
+            >
+          </div></a
+        >
+        <nav
+          class="hidden md:flex items-center gap-1 bg-[#111b27]/80 p-1.5 rounded-full border border-white/10 shadow-inner"
+        >
+          <a
+            href="/#inicio"
+            class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
+            >Inicio</a
+          ><a
+            href="/#sobre-mi"
+            class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
+            >Sobre mí</a
+          ><a
+            href="/#herramientas"
+            class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
+            >Herramientas</a
+          ><a
+            href="/#proyectos"
+            class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
+            >Proyectos</a
+          ><a
+            href="/#experiencia"
+            class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
+            >Experiencia</a
+          ><a
+            href="/#contacto"
+            class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
+            >Contacto</a
+          >
+        </nav>
+        <div class="hidden lg:flex items-center gap-4">
+          <div
+            class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.03] border border-white/10 text-xs font-mono-code text-[#9ca3af]"
+          >
+            <span
+              class="w-2 h-2 rounded-full bg-[#83d3cd] status-indicator"
+            ></span
+            ><span class="text-[11px] text-[#d1d5db]">Disponible</span>
+          </div>
+          <a
+            href="/#contacto"
+            class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-white text-black hover:bg-[#78b8f2] hover:text-white transition-all duration-200 active:scale-95 shadow-sm"
+            ><span>Hablemos</span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-up-right"
+              aria-hidden="true"
+            >
+              <path d="M7 7h10v10"></path>
+              <path d="M7 17 17 7"></path></svg
+          ></a>
         </div>
-
-        <p>
-          Make sure you configure your <strong>"user.name"</strong> and
-          <strong>"user.email"</strong> in git.
-        </p>
+        <div class="flex items-center gap-2">
+          <div
+            role="group"
+            aria-label="Idioma"
+            class="inline-flex items-center rounded-lg border border-white/10 bg-white/[0.04] p-0.5"
+          >
+            <button
+              type="button"
+              aria-pressed="true"
+              aria-label="Español"
+              class="min-w-9 rounded-md px-2 py-1.5 text-[11px] font-mono-code font-semibold transition-colors bg-[#78b8f2] text-[#09131e]"
+            >
+              ES</button
+            ><button
+              type="button"
+              aria-pressed="false"
+              aria-label="English"
+              class="min-w-9 rounded-md px-2 py-1.5 text-[11px] font-mono-code font-semibold transition-colors text-[#9ca3af] hover:text-white"
+            >
+              EN
+            </button>
+          </div>
+          <button
+            aria-label="Abrir menú"
+            class="md:hidden p-2 rounded-lg bg-white/[0.05] border border-white/10 text-[#d1d5db] hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16"></path>
+              <path d="M4 12h16"></path>
+              <path d="M4 19h16"></path>
+            </svg>
+          </button>
+        </div>
       </div>
-
-      <div class="actions">
-        <button class="primary">Open Git Log</button>
-        <button>Learn More</button>
-        <button>Cancel</button>
+    </header>
+    <nav class="mobile-dock" aria-label="Navegación principal">
+      <a href="#inicio" aria-label="Ir a Inicio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z" /></svg>
+        <span>Inicio</span>
+      </a>
+      <a href="#sobre-mi" aria-label="Ir a Sobre mí">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M5 21a7 7 0 0 1 14 0" /></svg>
+        <span>Sobre mí</span>
+      </a>
+      <a href="#herramientas" aria-label="Ir a Herramientas">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6 4-4 4 4-4 4" /><path d="m16 8-8 8" /><path d="m5 19 3-3 3 3-3 3z" /></svg>
+        <span>Stack</span>
+      </a>
+      <a href="#proyectos" aria-label="Ir a Proyectos">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" /><rect x="13" y="3" width="8" height="5" /><rect x="13" y="10" width="8" height="11" /><rect x="3" y="13" width="8" height="8" /></svg>
+        <span>Proyectos</span>
+      </a>
+      <a href="#experiencia" aria-label="Ir a Experiencia">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="1" /><path d="M8 7V4h8v3M3 12h18m-11 0v2h4v-2" /></svg>
+        <span>Trayectoria</span>
+      </a>
+      <a href="#contacto" aria-label="Ir a Contacto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1" /><path d="m3 7 9 6 9-6" /></svg>
+        <span>Contacto</span>
+      </a>
+    </nav>
+    <main class="pt-20">
+      <!--$-->
+      <div class="relative min-h-screen">
+        <section
+          id="inicio"
+          class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-radial-vignette bg-subtle-grid"
+        >
+          <div class="max-w-6xl mx-auto px-6 sm:px-8">
+            <div
+              class="flex flex-wrap items-center justify-between gap-4 mb-10 pb-4 border-b border-white/[0.08]"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-mono-code text-[#9ca3af]"
+                  ><span
+                    class="w-2 h-2 rounded-full bg-[#83d3cd] status-indicator"
+                  ></span
+                  ><span
+                    >Disponible para proyectos selectos y colaboraciones
+                    freelance</span
+                  ></span
+                ><span
+                  class="hidden sm:inline text-xs text-[#6b7280] font-mono-code"
+                  >·
+                  <!-- -->Granada, España (Disponible para remoto)</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <button
+                  class="group inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 text-xs font-mono-code text-[#9ca3af] hover:text-white transition-all cursor-pointer"
+                  title="Copiar dirección de correo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-copy group-hover:text-[#78b8f2] transition-colors"
+                    aria-hidden="true"
+                  >
+                    <rect
+                      width="14"
+                      height="14"
+                      x="8"
+                      y="8"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <path
+                      d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"
+                    ></path></svg
+                  ><span>moccapsd@gmail.com</span>
+                </button>
+              </div>
+            </div>
+            <div class="max-w-5xl space-y-7">
+              <div class="space-y-3">
+                <span
+                  class="text-xs font-mono-code uppercase tracking-widest text-[#78b8f2] font-semibold flex items-center gap-2"
+                  ><span class="w-4 h-[1px] bg-[#78b8f2]"></span>Diseñador
+                  gráfico freelance · Granada</span
+                >
+                <h1
+                  class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white leading-[0.98]"
+                >
+                  Gonzalo
+                  <span class="font-serif-italic font-normal text-[#a9d4fb]"
+                    >Morales</span
+                  >
+                </h1>
+              </div>
+              <p
+                class="text-base sm:text-lg text-[#a4b3c2] leading-relaxed max-w-2xl font-light"
+              >
+                Diseño marcas e identidades visuales con carácter, y llevo esa
+                misma mirada creativa a proyectos digitales y web.
+              </p>
+              <div class="flex flex-wrap items-center gap-4 pt-2">
+                <a
+                  href="#proyectos"
+                  class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#78b8f2] text-[#09131e] font-semibold text-sm hover:bg-[#a9d4fb] transition-colors active:scale-[0.98]"
+                  ><span>Explorar mi trabajo</span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-down"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 5v14"></path>
+                    <path d="m19 12-7 7-7-7"></path></svg></a
+                ><button
+                  class="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-white/[0.05] hover:bg-white/[0.1] border border-white/10 text-white font-medium text-sm transition-all active:scale-[0.98] cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-text text-[#78b8f2]"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                    ></path>
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                    <path d="M10 9H8"></path>
+                    <path d="M16 13H8"></path>
+                    <path d="M16 17H8"></path></svg
+                  ><span>Ver CV Completo</span></button
+                ><a
+                  href="#contacto"
+                  class="inline-flex items-center gap-2 px-5 py-3 rounded-full text-[#9ca3af] hover:text-white text-sm font-medium transition-colors"
+                  ><span
+                    >Contactar directamente<!-- -->
+                    →</span
+                  ></a
+                >
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 pt-10 border-t border-white/[0.08]"
+            >
+              <div
+                class="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05]"
+              >
+                <div
+                  class="text-3xl sm:text-4xl font-bold font-mono-code text-white mb-1"
+                >
+                  +4
+                </div>
+                <div
+                  class="text-xs font-semibold text-[#d1d5db] uppercase tracking-wider mb-1"
+                >
+                  Años como freelance
+                </div>
+                <div class="text-[11px] text-[#6b7280]">
+                  Diseño gráfico y branding
+                </div>
+              </div>
+              <div
+                class="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05]"
+              >
+                <div
+                  class="text-3xl sm:text-4xl font-bold font-mono-code text-white mb-1"
+                >
+                  50+
+                </div>
+                <div
+                  class="text-xs font-semibold text-[#d1d5db] uppercase tracking-wider mb-1"
+                >
+                  Proyectos entregados
+                </div>
+                <div class="text-[11px] text-[#6b7280]">
+                  Identidades, campañas y piezas digitales
+                </div>
+              </div>
+              <div
+                class="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05]"
+              >
+                <div
+                  class="text-3xl sm:text-4xl font-bold font-mono-code text-white mb-1"
+                >
+                  100%
+                </div>
+                <div
+                  class="text-xs font-semibold text-[#d1d5db] uppercase tracking-wider mb-1"
+                >
+                  Enfoque visual
+                </div>
+                <div class="text-[11px] text-[#6b7280]">
+                  Composición, consistencia y claridad
+                </div>
+              </div>
+              <div
+                class="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.05]"
+              >
+                <div
+                  class="text-3xl sm:text-4xl font-bold font-mono-code text-white mb-1"
+                >
+                  Web
+                </div>
+                <div
+                  class="text-xs font-semibold text-[#d1d5db] uppercase tracking-wider mb-1"
+                >
+                  Capa complementaria
+                </div>
+                <div class="text-[11px] text-[#6b7280]">
+                  Diseño aplicado a interfaces y experiencias online
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="sobre-mi"
+          class="py-24 border-t border-white/[0.08] relative"
+        >
+          <div class="max-w-6xl mx-auto px-6 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+              <div class="lg:col-span-5 space-y-6">
+                <div
+                  class="inline-flex items-center gap-2 text-xs font-mono-code uppercase tracking-widest text-[#78b8f2] font-semibold"
+                >
+                  <span
+                    class="w-3 h-3 rounded-full bg-[#78b8f2]/20 flex items-center justify-center"
+                    ><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#78b8f2]"
+                    ></span></span
+                  >Perfil Personal &amp; Filosofía
+                </div>
+                <h2
+                  class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight"
+                >
+                  Diseño gráfico que convierte ideas en<!-- -->
+                  <span class="font-serif-italic font-normal text-white/90"
+                    >identidades visuales</span
+                  >.
+                </h2>
+                <div
+                  class="p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] relative overflow-hidden"
+                >
+                  <p
+                    class="text-sm font-serif-italic text-[#d1d5db] leading-relaxed"
+                  >
+                    &quot;<!-- -->Creo en el diseño como herramienta
+                    estratégica: una identidad visual sólida, una composición
+                    clara y una experiencia coherente pueden transformar una
+                    marca mucho más que una página web por sí sola.<!-- -->&quot;
+                  </p>
+                  <div
+                    class="mt-4 pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs text-[#9ca3af] font-mono-code"
+                  >
+                    <span>— Gonzalo Morales</span
+                    ><span class="text-[#83d3cd]">Granada, 2026</span>
+                  </div>
+                </div>
+                <div class="space-y-3 pt-2">
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-xs text-[#9ca3af]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-map-pin text-[#78b8f2] shrink-0"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle></svg
+                    ><span
+                      >Base en Granada, España<!-- -->
+                      ·
+                      <!-- -->Colaboración fluida con equipos en remoto</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-xs text-[#9ca3af]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-globe text-[#3b82f6] shrink-0"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path
+                        d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                      ></path>
+                      <path d="M2 12h20"></path></svg
+                    ><span
+                      >Español (Nativo) · Inglés (C1 Profesional Fluido)</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-7 space-y-8">
+                <div
+                  class="space-y-4 text-base sm:text-lg text-[#9ca3af] font-light leading-relaxed"
+                >
+                  <p>
+                    Soy diseñador freelance desde 2022, con una base sólida en
+                    diseño gráfico, identidad visual y producción creativa. Me
+                    apasiona crear piezas y sistemas visuales que transmiten
+                    personalidad, claridad y valor de marca desde el primer
+                    vistazo.
+                  </p>
+                  <p>
+                    En los últimos años he ido conectando mi trabajo visual con
+                    la web, entendiendo la página web como una extensión natural
+                    del diseño gráfico. Lo que realmente me define es la
+                    creatividad, la coherencia visual y la capacidad de
+                    convertir una idea en una propuesta efectiva, bien pensada y
+                    con atención personalizada en cada detalle.
+                  </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                  <div
+                    class="p-5 rounded-2xl bg-[#111b27] border border-white/[0.07] hover:border-white/20 transition-all"
+                  >
+                    <div
+                      class="w-9 h-9 rounded-xl bg-[#78b8f2]/10 border border-[#78b8f2]/30 flex items-center justify-center text-[#78b8f2] mb-3"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-sparkles"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+                        ></path>
+                        <path d="M20 2v4"></path>
+                        <path d="M22 4h-4"></path>
+                        <circle cx="4" cy="20" r="2"></circle>
+                      </svg>
+                    </div>
+                    <h3 class="text-base font-semibold text-white mb-2">
+                      100% creatividad aplicada
+                    </h3>
+                    <p class="text-xs text-[#9ca3af] leading-relaxed">
+                      Todo parte de una intención visual clara. No trabajo con
+                      plantillas genéricas ni con ideas prestadas; cada
+                      propuesta nace de una mirada creativa propia y una
+                      estrategia pensada para la marca.
+                    </p>
+                  </div>
+                  <div
+                    class="p-5 rounded-2xl bg-[#111b27] border border-white/[0.07] hover:border-white/20 transition-all"
+                  >
+                    <div
+                      class="w-9 h-9 rounded-xl bg-[#3b82f6]/10 border border-[#3b82f6]/30 flex items-center justify-center text-[#3b82f6] mb-3"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-terminal"
+                        aria-hidden="true"
+                      >
+                        <path d="M12 19h8"></path>
+                        <path d="m4 17 6-6-6-6"></path>
+                      </svg>
+                    </div>
+                    <h3 class="text-base font-semibold text-white mb-2">
+                      Diseño gráfico con impacto web
+                    </h3>
+                    <p class="text-xs text-[#9ca3af] leading-relaxed">
+                      Mi base está en el diseño gráfico, y ahora lo aplico a la
+                      web como una extensión natural: identidad visual,
+                      composición, jerarquía y personalidad pensada para la
+                      experiencia digital.
+                    </p>
+                  </div>
+                  <div
+                    class="p-5 rounded-2xl bg-[#111b27] border border-white/[0.07] hover:border-white/20 transition-all"
+                  >
+                    <div
+                      class="w-9 h-9 rounded-xl bg-[#83d3cd]/10 border border-[#83d3cd]/30 flex items-center justify-center text-[#83d3cd] mb-3"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-shield"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3 class="text-base font-semibold text-white mb-2">
+                      Eficacia visual y funcional
+                    </h3>
+                    <p class="text-xs text-[#9ca3af] leading-relaxed">
+                      Me importa que el diseño no solo se vea bien, sino que
+                      funcione. Hablo de claridad, intención, comunicación
+                      efectiva y una ejecución que ayuda a vender, conectar y
+                      diferenciar.
+                    </p>
+                  </div>
+                  <div
+                    class="p-5 rounded-2xl bg-[#111b27] border border-white/[0.07] hover:border-white/20 transition-all"
+                  >
+                    <div
+                      class="w-9 h-9 rounded-xl bg-[#77c9dd]/10 border border-[#77c9dd]/30 flex items-center justify-center text-[#77c9dd] mb-3"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-compass"
+                        aria-hidden="true"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                          d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3 class="text-base font-semibold text-white mb-2">
+                      Atención personalizada 10/10
+                    </h3>
+                    <p class="text-xs text-[#9ca3af] leading-relaxed">
+                      Trabajo de forma cercana, clara y cuidadosa. Mi enfoque es
+                      entender cada proyecto con detalle, escuchar bien y
+                      ofrecer una solución visual ajustada a la necesidad real
+                      del cliente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="herramientas"
+          class="py-24 border-t border-white/[0.08] relative"
+        >
+          <div class="max-w-6xl mx-auto px-6 sm:px-8">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12"
+            >
+              <div class="space-y-3">
+                <span
+                  class="text-xs font-mono-code uppercase tracking-widest text-[#78b8f2] font-semibold flex items-center gap-2"
+                  ><span class="w-2 h-2 rounded-full bg-[#78b8f2]"></span
+                  >Herramientas &amp; Tecnologías</span
+                >
+                <h2
+                  class="text-3xl sm:text-4xl font-bold tracking-tight text-white"
+                >
+                  Caja de herramientas de producción
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-[#9ca3af] max-w-xl font-light"
+                >
+                  Estas son las herramientas que uso para convertir una idea
+                  visual en algo coherente, usable y con personalidad. Mi base
+                  está en el diseño gráfico y la creatividad visual, y la web la
+                  estoy integrando como una extensión natural de ese criterio.
+                </p>
+              </div>
+              <div
+                class="flex flex-wrap gap-2 p-1.5 bg-[#111b27] rounded-xl border border-white/[0.08]"
+              >
+                <button
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer bg-white text-black shadow-sm font-semibold"
+                >
+                  Todo el stack (9)</button
+                ><button
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
+                >
+                  Diseño Gráfico &amp; Adobe</button
+                ><button
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
+                >
+                  Web &amp; Maquetación</button
+                ><button
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
+                >
+                  Flujo &amp; Brand
+                </button>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <img
+                        src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/960px-Adobe_Photoshop_CC_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
+                        alt="Logo de la herramienta"
+                        class="w-5 h-5 object-contain rounded-sm"
+                      />
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        Adobe Photoshop
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >Diseño Gráfico</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#78b8f2]/10 text-[#78b8f2] border-[#78b8f2]/30"
+                      >Experto</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >7 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Edición de imágenes, retoque fotográfico, composiciones
+                  visuales y creación de piezas gráficas para marca, campañas y
+                  contenidos digitales.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Retocando fotográfico</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Composición visual</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Piezas de marca y publicidad</span></span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <img
+                        src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/1280px-Adobe_After_Effects_CC_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
+                        alt="Logo de la herramienta"
+                        class="w-5 h-5 object-contain rounded-sm"
+                      />
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        Adobe After Effects
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >Motion Graphics</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#3b82f6]/10 text-[#60a5fa] border-[#3b82f6]/30"
+                      >Avanzado</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >5 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Animación, motion graphics y composición para vídeos, piezas
+                  promocionales y contenido visual de marca.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Animación de marca</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Transiciones visuales</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Piezas promocionales</span></span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <img
+                        src="https://www.nicepng.com/png/full/321-3217920_cinema-4d-logo-maxon-cinema-4d-logo-vector.png"
+                        alt="Logo de la herramienta"
+                        class="w-5 h-5 object-contain rounded-sm"
+                      />
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        Cinema 4D
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >3D &amp; Render</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#3b82f6]/10 text-[#60a5fa] border-[#3b82f6]/30"
+                      >Competente</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >3 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Modelado y render 3D básico para piezas de branding, productos
+                  y conceptos visuales con enfoque publicitario.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Modelado 3D</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Render visual</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Conceptos publicitarios</span></span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <img
+                        src="https://cdn.simpleicons.org/wordpress/21759B"
+                        alt="Logo de la herramienta"
+                        class="w-5 h-5 object-contain rounded-sm"
+                      />
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        WordPress &amp; Divi
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >CMS &amp; Diseño Web</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#3b82f6]/10 text-[#60a5fa] border-[#3b82f6]/30"
+                      >Avanzado</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >4 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Desarrollo y maquetación de sitios web con WordPress, Divi y
+                  estructura visual adaptable a necesidades de marca y
+                  contenido.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Sitios corporativos</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Maquetación visual</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Plantillas personalizadas</span></span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <img
+                        src="https://cdn.simpleicons.org/html5/E34F26"
+                        alt="Logo de la herramienta"
+                        class="w-5 h-5 object-contain rounded-sm"
+                      />
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        HTML5, CSS3 &amp; JavaScript
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >Front-end</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#3b82f6]/10 text-[#60a5fa] border-[#3b82f6]/30"
+                      >Avanzado</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >4 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Maquetación de interfaces, estilos visuales, interactividad
+                  básica y construcción de páginas web con estructura y
+                  rendimiento cuidados.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>HTML semántico</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>CSS moderno</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>JavaScript funcional</span></span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <img
+                        src="https://cdn.simpleicons.org/php/777BB4"
+                        alt="Logo de la herramienta"
+                        class="w-5 h-5 object-contain rounded-sm"
+                      />
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        PHP, Java &amp; SQL
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >Backend &amp; Datos</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#3b82f6]/10 text-[#60a5fa] border-[#3b82f6]/30"
+                      >Competente</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >3 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Uso de lenguajes de programación y bases de datos para lógica,
+                  gestión de contenido y conexión con sistemas más complejos.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>PHP</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Java</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>SQL</span></span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-compass w-5 h-5 text-[#83d3cd]"
+                        aria-hidden="true"
+                      >
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                          d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        Diseño de interfaces web
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >UX / UI aplicada a web</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#3b82f6]/10 text-[#60a5fa] border-[#3b82f6]/30"
+                      >Avanzado</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >2 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Estoy consolidando la transición del diseño gráfico al diseño
+                  de experiencias web, aplicando composición, tipografía y
+                  jerarquía visual en interfaces digitales.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Jerarquía visual</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Diseño web</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>UX aplicada</span></span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-sparkles w-5 h-5 text-[#10b981]"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+                        ></path>
+                        <path d="M20 2v4"></path>
+                        <path d="M22 4h-4"></path>
+                        <circle cx="4" cy="20" r="2"></circle>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        HTML5 Canvas &amp; WebGL
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >Código Creativo</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#3b82f6]/10 text-[#60a5fa] border-[#3b82f6]/30"
+                      >Avanzado</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >3 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Efectos visuales interactivos, shaders ligeros, partículas
+                  generativas y transformaciones cinéticas guiadas por el
+                  cursor.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Gráficos 60 FPS</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Micro-shaders sin latencia</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Visualizadores de audio/datos</span></span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-5 rounded-2xl bg-[#111b27] border transition-all duration-200 cursor-pointer border-white/[0.07] hover:border-white/20 hover:bg-[#161821]"
+              >
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center shrink-0"
+                    >
+                      <img
+                        src="https://cdn.simpleicons.org/github/FFFFFF"
+                        alt="Logo de la herramienta"
+                        class="w-5 h-5 object-contain rounded-sm"
+                      />
+                    </div>
+                    <div>
+                      <h3
+                        class="text-sm font-semibold text-white tracking-tight"
+                      >
+                        Git, GitHub &amp; CI/CD
+                      </h3>
+                      <span class="text-[11px] font-mono-code text-[#6b7280]"
+                        >Versionado &amp; Flujo</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded-full border bg-[#78b8f2]/10 text-[#78b8f2] border-[#78b8f2]/30"
+                      >Experto</span
+                    ><span
+                      class="text-[10px] text-[#6b7280] font-mono-code mt-0.5"
+                      >6 años</span
+                    >
+                  </div>
+                </div>
+                <p class="text-xs text-[#9ca3af] leading-relaxed mb-4">
+                  Control de versiones riguroso con commits semánticos, branches
+                  estructurados y pipelines de despliegue continuo.
+                </p>
+                <div
+                  class="flex flex-wrap gap-1.5 pt-2 border-t border-white/[0.04]"
+                >
+                  <span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Commits semánticos</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>Code Reviews</span></span
+                  ><span
+                    class="inline-flex items-center gap-1 text-[11px] font-mono-code px-2 py-0.5 rounded-md bg-white/[0.03] text-[#d1d5db] border border-white/[0.05]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check text-[#83d3cd]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span>GitHub Actions</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-8 p-4 rounded-xl bg-white/[0.02] border border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#6b7280]"
+            >
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#83d3cd]"></span
+                ><span
+                  >Actualizado con los estándares y versiones vigentes de
+                  2026.</span
+                >
+              </div>
+              <span class="font-mono-code"
+                >Herramientas aplicadas en proyectos reales</span
+              >
+            </div>
+          </div>
+        </section>
+        <section
+          id="proyectos"
+          class="py-24 border-t border-white/[0.08] relative"
+        >
+          <div class="max-w-6xl mx-auto px-6 sm:px-8">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12"
+            >
+              <div class="space-y-3">
+                <span
+                  class="text-xs font-mono-code uppercase tracking-widest text-[#78b8f2] font-semibold flex items-center gap-2"
+                  ><span class="w-2 h-2 rounded-full bg-[#78b8f2]"></span
+                  >Proyectos Seleccionados</span
+                >
+                <h2
+                  class="text-3xl sm:text-4xl font-bold tracking-tight text-white"
+                >
+                  Diseño gráfico con mirada digital
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-[#9ca3af] max-w-xl font-light"
+                >
+                  Mi trabajo se centra en la creatividad visual, la identidad de
+                  marca y la composición. La web es una extensión de ese
+                  criterio, un espacio donde aplico ese mismo enfoque con
+                  coherencia y personalidad.
+                </p>
+              </div>
+              <div
+                class="flex flex-wrap gap-2 p-1.5 bg-[#111b27] rounded-xl border border-white/[0.08]"
+              >
+                <button
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer bg-white text-black shadow-sm font-semibold"
+                >
+                  Todos los proyectos (1)</button
+                ><button
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
+                >
+                  Web &amp; Exploración</button
+                ><button
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
+                >
+                  Diseño Gráfico</button
+                ><button
+                  class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
+                >
+                  Creatividad Digital
+                </button>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div
+                class="group flex flex-col justify-between rounded-2xl bg-[#111b27] border border-white/[0.08] p-5 hover:border-white/20 transition-all duration-300 hover:shadow-xl hover:shadow-black/40"
+              >
+                <div>
+                  <div class="mb-4">
+                    <div
+                      class="w-full h-48 sm:h-56 rounded-xl border border-white/[0.08] overflow-hidden bg-[#152131] group-hover:border-white/20 transition-all"
+                    >
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d69bf3219410611.Y3JvcCwxMjc4LDEwMDAsMTI2OCww.jpg"
+                        alt="Proyecto destacado del portfolio de Diseñador Gráfico Freelance"
+                        class="w-full h-full object-cover object-center"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between text-xs font-mono-code mb-2"
+                  >
+                    <span
+                      class="px-2 py-0.5 rounded-md font-medium text-[11px]"
+                      style="
+                        background-color: #78b8f215;
+                        color: #78b8f2;
+                        border: 1px solid #78b8f230;
+                      "
+                      >Portafolio Visual</span
+                    ><span class="text-[#6b7280]">2022 — Presente</span>
+                  </div>
+                  <h3
+                    class="text-lg font-bold text-white tracking-tight group-hover:text-[#78b8f2] transition-colors mb-2"
+                  >
+                    Portfolio Digital
+                  </h3>
+                  <p
+                    class="text-xs text-[#9ca3af] leading-relaxed line-clamp-3 mb-4"
+                  >
+                    Mi portafolio visual reúne proyectos de identidad, diseño
+                    editorial, comunicación visual y piezas creativas
+                    desarrolladas en freelance desde 2022. Aquí muestro la
+                    esencia del trabajo gráfico que realizo y la forma en que
+                    aplico el diseño a la comunicación de marca.
+                  </p>
+                  <div class="flex flex-wrap gap-1.5 mb-5">
+                    <span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.04] text-[#d1d5db] border border-white/[0.06]"
+                      >Behance</span
+                    ><span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.04] text-[#d1d5db] border border-white/[0.06]"
+                      >Branding</span
+                    ><span
+                      class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.04] text-[#d1d5db] border border-white/[0.06]"
+                      >Diseño Gráfico</span
+                    ><span
+                      class="text-[10px] font-mono-code px-1.5 py-0.5 text-[#6b7280]"
+                      >+<!-- -->1</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2"
+                >
+                  <button
+                    class="inline-flex items-center gap-1.5 text-xs font-medium text-white hover:text-[#78b8f2] transition-colors cursor-pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-eye"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                      ></path>
+                      <circle cx="12" cy="12" r="3"></circle></svg
+                    ><span>Ver detalles</span>
+                  </button>
+                  <div class="flex items-center gap-3">
+                    <a
+                      href="https://www.behance.net/moccapsd"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1 text-xs font-mono-code text-[#83d3cd] hover:underline"
+                      title="Ver en Behance"
+                      ><span>Behance</span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-up-right"
+                        aria-hidden="true"
+                      >
+                        <path d="M7 7h10v10"></path>
+                        <path d="M7 17 17 7"></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="experiencia"
+          class="py-24 border-t border-white/[0.08] relative"
+        >
+          <div class="max-w-6xl mx-auto px-6 sm:px-8">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16"
+            >
+              <div class="space-y-3">
+                <span
+                  class="text-xs font-mono-code uppercase tracking-widest text-[#78b8f2] font-semibold flex items-center gap-2"
+                  ><span class="w-2 h-2 rounded-full bg-[#78b8f2]"></span
+                  >Trayectoria &amp; Experiencias</span
+                >
+                <h2
+                  class="text-3xl sm:text-4xl font-bold tracking-tight text-white"
+                >
+                  Experiencia profesional
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-[#9ca3af] max-w-xl font-light"
+                >
+                  Mi recorrido como diseñador freelance desde 2022 y mi
+                  formación actual en desarrollo web.
+                </p>
+              </div>
+              <button
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 text-white font-medium text-xs transition-all cursor-pointer self-start md:self-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text text-[#78b8f2]"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                  ></path>
+                  <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>Ver formato imprimible / PDF</span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right text-[#9ca3af]"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div class="lg:col-span-8 space-y-8 relative">
+                <div
+                  class="absolute top-4 bottom-4 left-[15px] sm:left-[19px] w-[1px] bg-white/[0.08] pointer-events-none"
+                ></div>
+                <div class="relative pl-10 sm:pl-12 group">
+                  <div
+                    class="absolute left-2 sm:left-3 top-1.5 w-3.5 h-3.5 rounded-full border-2 transition-all -translate-x-1/2 bg-[#83d3cd] border-[#83d3cd]/40 ring-4 ring-[#83d3cd]/15"
+                  ></div>
+                  <div
+                    class="p-6 rounded-2xl bg-[#111b27] border border-white/[0.07] hover:border-white/20 transition-all"
+                  >
+                    <div
+                      class="flex flex-wrap items-center justify-between gap-2 mb-2"
+                    >
+                      <span
+                        class="text-xs font-mono-code px-2.5 py-0.5 rounded-full bg-white/[0.04] text-[#d1d5db] border border-white/[0.08]"
+                        >2022 — Presente</span
+                      ><span class="text-xs font-mono-code text-[#6b7280]"
+                        >Granada / Remoto</span
+                      >
+                    </div>
+                    <h3
+                      class="text-lg font-bold text-white tracking-tight mt-1"
+                    >
+                      Diseñador Gráfico Freelance
+                    </h3>
+                    <div class="text-xs font-medium text-[#78b8f2] mb-3">
+                      Trabajo Independiente / Estudio Personal<!-- -->
+                      <span class="text-[#6b7280] font-normal"
+                        >·
+                        <!-- -->Branding, diseño gráfico y experiencia
+                        visual</span
+                      >
+                    </div>
+                    <p
+                      class="text-xs sm:text-sm text-[#9ca3af] leading-relaxed mb-4"
+                    >
+                      Diseño de identidad visual, piezas gráficas, campañas
+                      digitales y recursos de marca para clientes que necesitan
+                      una presencia visual sólida y coherente.
+                    </p>
+                    <div class="space-y-2 mb-4">
+                      <div
+                        class="flex items-start gap-2 text-xs text-[#d1d5db]"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13"
+                          height="13"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-circle-check text-[#83d3cd] shrink-0 mt-0.5"
+                          aria-hidden="true"
+                        >
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path></svg
+                        ><span
+                          >He trabajado en branding, diseño editorial, piezas
+                          publicitarias y recursos visuales para marcas y
+                          proyectos con identidad propia.</span
+                        >
+                      </div>
+                      <div
+                        class="flex items-start gap-2 text-xs text-[#d1d5db]"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13"
+                          height="13"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-circle-check text-[#83d3cd] shrink-0 mt-0.5"
+                          aria-hidden="true"
+                        >
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path></svg
+                        ><span
+                          >He ido incorporando la parte de diseño de interfaces
+                          y web aplicando la misma lógica visual y estratégica
+                          del diseño gráfico a experiencias digitales.</span
+                        >
+                      </div>
+                      <div
+                        class="flex items-start gap-2 text-xs text-[#d1d5db]"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="13"
+                          height="13"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-circle-check text-[#83d3cd] shrink-0 mt-0.5"
+                          aria-hidden="true"
+                        >
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="m9 12 2 2 4-4"></path></svg
+                        ><span
+                          >Mi trabajo se centra en la claridad visual, la
+                          coherencia de marca y la calidad estética tanto en
+                          soportes impresos como digitales.</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="flex flex-wrap gap-1.5 pt-3 border-t border-white/[0.05]"
+                    >
+                      <span
+                        class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.02] text-[#9ca3af] border border-white/[0.04]"
+                        >Photoshop</span
+                      ><span
+                        class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.02] text-[#9ca3af] border border-white/[0.04]"
+                        >Illustrator</span
+                      ><span
+                        class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.02] text-[#9ca3af] border border-white/[0.04]"
+                        >Figma</span
+                      ><span
+                        class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.02] text-[#9ca3af] border border-white/[0.04]"
+                        >Branding</span
+                      ><span
+                        class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.02] text-[#9ca3af] border border-white/[0.04]"
+                        >Diseño Editorial</span
+                      ><span
+                        class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-white/[0.02] text-[#9ca3af] border border-white/[0.04]"
+                        >UI Web</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-4 space-y-6">
+                <div
+                  class="p-6 rounded-2xl bg-[#111b27] border border-white/[0.07] space-y-6"
+                >
+                  <div
+                    class="flex items-center gap-2 pb-4 border-b border-white/[0.08]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-graduation-cap w-5 h-5 text-[#3b82f6]"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                      ></path>
+                      <path d="M22 10v6"></path>
+                      <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </svg>
+                    <h3
+                      class="text-sm font-bold uppercase tracking-wider text-white"
+                    >
+                      Formación Académica
+                    </h3>
+                  </div>
+                  <div
+                    class="space-y-1.5 pb-4 last:pb-0 border-b last:border-0 border-white/[0.04]"
+                  >
+                    <span
+                      class="text-[10px] font-mono-code text-[#3b82f6] px-2 py-0.5 rounded bg-blue-500/10"
+                      >2025 — Presente</span
+                    >
+                    <h4
+                      class="text-xs font-semibold text-white tracking-tight pt-1"
+                    >
+                      Grado Superior en Desarrollo de Aplicaciones Web
+                    </h4>
+                    <p class="text-[11px] text-[#9ca3af]">
+                      IES Zaidín Vergeles<!-- -->
+                      ·
+                      <!-- -->Granada, España
+                    </p>
+                    <p class="text-[11px] text-[#6b7280] leading-relaxed">
+                      Formación técnica enfocada en frontend, backend, bases de
+                      datos, APIs y diseño de interfaces orientadas al usuario.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-6 rounded-2xl bg-gradient-to-br from-[#78b8f2]/10 to-transparent border border-[#78b8f2]/20 space-y-3"
+                >
+                  <h4 class="text-sm font-bold text-white">
+                    ¿Necesitas el currículum en PDF?
+                  </h4>
+                  <p class="text-xs text-[#9ca3af] leading-relaxed">
+                    Consulta la versión estructurada, lista para imprimir, con
+                    el detalle de mi formación, herramientas y experiencia.
+                  </p>
+                  <button
+                    class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white text-black font-semibold text-xs hover:bg-[#78b8f2] hover:text-white transition-all cursor-pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-file-text"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                      ></path>
+                      <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                      <path d="M10 9H8"></path>
+                      <path d="M16 13H8"></path>
+                      <path d="M16 17H8"></path></svg
+                    ><span>Abrir Curriculum Vitae</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="contacto"
+          class="py-24 border-t border-white/[0.08] relative"
+        >
+          <div class="max-w-6xl mx-auto px-6 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+              <div class="lg:col-span-5 space-y-6">
+                <div
+                  class="inline-flex items-center gap-2 text-xs font-mono-code uppercase tracking-widest text-[#78b8f2] font-semibold"
+                >
+                  <span class="w-2 h-2 rounded-full bg-[#78b8f2]"></span
+                  >Contacto Directo
+                </div>
+                <h2
+                  class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight"
+                >
+                  ¿Tienes una idea o proyecto en mente?<!-- -->
+                  <span class="font-serif-italic font-normal text-white/90"
+                    >Hablemos<!-- -->.</span
+                  >
+                </h2>
+                <p
+                  class="text-sm sm:text-base text-[#9ca3af] font-light leading-relaxed"
+                >
+                  Estoy disponible para proyectos de branding, diseño gráfico,
+                  identidad visual y creatividad digital, así como para aplicar
+                  ese mismo criterio al diseño de páginas web y propuestas
+                  visuales para la presencia online.
+                </p>
+                <div
+                  class="p-5 rounded-2xl bg-[#111b27] border border-white/[0.08] space-y-3"
+                >
+                  <span class="text-[11px] font-mono-code text-[#6b7280]"
+                    >Correo electrónico directo:</span
+                  >
+                  <div class="flex items-center justify-between gap-3">
+                    <span
+                      class="text-sm font-mono-code text-white font-medium truncate"
+                      >moccapsd@gmail.com</span
+                    ><button
+                      type="button"
+                      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/15 border border-white/10 text-xs font-mono-code text-[#d1d5db] hover:text-white transition-all cursor-pointer shrink-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-copy"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="14"
+                          height="14"
+                          x="8"
+                          y="8"
+                          rx="2"
+                          ry="2"
+                        ></rect>
+                        <path
+                          d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"
+                        ></path></svg
+                      ><span>Copiar</span>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-3 p-3.5 rounded-xl bg-white/[0.02] border border-white/[0.05] text-xs text-[#9ca3af]"
+                >
+                  <span
+                    class="w-2.5 h-2.5 rounded-full bg-[#83d3cd] status-indicator shrink-0"
+                  ></span
+                  ><span>Suelo responder en menos de 24 horas laborables.</span>
+                </div>
+              </div>
+              <div class="lg:col-span-7">
+                <div
+                  class="p-6 sm:p-8 rounded-3xl bg-[#111b27] border border-white/[0.08] shadow-xl"
+                >
+                  <form
+                    name="contact"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    class="space-y-4"
+                    method="POST"
+                  >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p hidden="">
+                      <label
+                        >No rellenar este campo:<!-- -->
+                        <input name="bot-field"
+                      /></label>
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div class="space-y-1.5">
+                        <label
+                          for="name"
+                          class="text-xs font-mono-code text-[#d1d5db]"
+                          >Tu nombre *</label
+                        ><input
+                          type="text"
+                          id="name"
+                          required=""
+                          placeholder="Ej. Sofía Morales"
+                          class="w-full px-4 py-2.5 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder-[#6b7280] text-sm focus:outline-none focus:border-[#78b8f2] focus:ring-1 focus:ring-[#78b8f2] transition-all"
+                          name="name"
+                        />
+                      </div>
+                      <div class="space-y-1.5">
+                        <label
+                          for="email"
+                          class="text-xs font-mono-code text-[#d1d5db]"
+                          >Correo electrónico *</label
+                        ><input
+                          type="email"
+                          id="email"
+                          required=""
+                          placeholder="nombre@empresa.com"
+                          class="w-full px-4 py-2.5 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder-[#6b7280] text-sm focus:outline-none focus:border-[#78b8f2] focus:ring-1 focus:ring-[#78b8f2] transition-all"
+                          name="email"
+                        />
+                      </div>
+                    </div>
+                    <div class="space-y-1.5">
+                      <label
+                        for="project-type"
+                        class="text-xs font-mono-code text-[#d1d5db]"
+                        >Tipo de colaboración</label
+                      ><select
+                        id="project-type"
+                        name="project-type"
+                        class="w-full px-4 py-2.5 rounded-xl bg-[#171922] border border-white/10 text-white text-sm focus:outline-none focus:border-[#78b8f2] focus:ring-1 focus:ring-[#78b8f2] transition-all"
+                      >
+                        <option value="branding">
+                          Branding &amp; Diseño Gráfico
+                        </option>
+                        <option value="web-design">
+                          Diseño Web / Maquetación visual
+                        </option>
+                        <option value="identidad">
+                          Identidad Visual &amp; Comunicación
+                        </option>
+                        <option value="full-project">
+                          Proyecto Creativo Completo
+                        </option>
+                        <option value="otro">Otra consulta / Charla</option>
+                      </select>
+                    </div>
+                    <div class="space-y-1.5">
+                      <label
+                        for="message"
+                        class="text-xs font-mono-code text-[#d1d5db]"
+                        >Cuéntame sobre el proyecto o idea *</label
+                      ><textarea
+                        id="message"
+                        name="message"
+                        required=""
+                        rows="4"
+                        placeholder="Objetivos, plazos aproximados, enlaces o cualquier detalle relevante..."
+                        class="w-full px-4 py-2.5 rounded-xl bg-white/[0.03] border border-white/10 text-white placeholder-[#6b7280] text-sm focus:outline-none focus:border-[#78b8f2] focus:ring-1 focus:ring-[#78b8f2] transition-all resize-none"
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-white text-black font-semibold text-xs hover:bg-[#78b8f2] hover:text-white transition-all shadow-md active:scale-95 cursor-pointer disabled:opacity-50"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-send"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+                        ></path>
+                        <path d="m21.854 2.147-10.94 10.939"></path></svg
+                      ><span>Enviar mensaje</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+      <script>
+        (function (a, f) {
+          let l;
+          try {
+            l = JSON.parse(sessionStorage.getItem(a) || "{}");
+          } catch {
+            return;
+          }
+          const n = l?.[f || history.state?.__TSR_key];
+          let c = !1;
+          for (const t in n) {
+            const e = n[t],
+              o = e?.scrollX,
+              s = e?.scrollY;
+            if (Number.isFinite(o) && Number.isFinite(s)) {
+              if (t === "window") (scrollTo(o, s), (c = !0));
+              else if (t)
+                try {
+                  const r = document.querySelector(t);
+                  r && ((r.scrollLeft = o), (r.scrollTop = s));
+                } catch {}
+            }
+          }
+          if (c) return;
+          const i = location.hash.slice(1);
+          if (i) {
+            const t = history.state?.__hashScrollIntoViewOptions ?? !0;
+            if (t) {
+              const e = document.getElementById(i);
+              e && e.scrollIntoView(t);
+            }
+            return;
+          }
+          scrollTo(0, 0);
+        })("tsr-scroll-restoration-v1_3");
+        document.currentScript.remove();
+      </script>
+      <!--/$-->
+    </main>
+    <footer
+      class="border-t border-white/[0.08] bg-[#080e15] py-16 px-6 sm:px-8 mt-24"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
+      >
+        <div class="flex flex-col items-center md:items-start gap-2">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#78b8f2]"></span
+            ><span class="font-semibold text-white tracking-tight"
+              >Gonzalo Morales</span
+            ><span class="text-white/20">/</span
+            ><span class="text-xs text-[#9ca3af] font-mono-code"
+              >Portfolio &amp; CV Personal</span
+            >
+          </div>
+          <p class="text-xs text-[#6b7280] max-w-sm text-center md:text-left">
+            Diseñador gráfico freelance. Branding, identidad visual, creatividad
+            digital y diseño web con mirada estética y estratégica.
+          </p>
+        </div>
+        <div class="flex flex-col items-center md:items-end gap-3">
+          <div class="flex items-center gap-4">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="p-2 rounded-full bg-white/[0.04] border border-white/10 text-[#9ca3af] hover:text-white hover:border-white/30 transition-colors"
+              aria-label="GitHub"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+                aria-hidden="true"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                ></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a
+            ><a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="p-2 rounded-full bg-white/[0.04] border border-white/10 text-[#9ca3af] hover:text-white hover:border-white/30 transition-colors"
+              aria-label="LinkedIn"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+                aria-hidden="true"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle></svg></a
+            ><a
+              href="https://dribbble.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="p-2 rounded-full bg-white/[0.04] border border-white/10 text-[#9ca3af] hover:text-white hover:border-white/30 transition-colors"
+              aria-label="Dribbble"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-dribbble"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
+                <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
+                <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path></svg
+            ></a>
+          </div>
+          <div
+            class="flex items-center gap-3 text-xs font-mono-code text-[#6b7280]"
+          >
+            <span>Granada, ES (UTC+1)</span><span>·</span
+            ><button
+              class="inline-flex items-center gap-1 hover:text-white transition-colors"
+            >
+              <span>Volver arriba</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up"
+                aria-hidden="true"
+              >
+                <path d="m5 12 7-7 7 7"></path>
+                <path d="M12 19V5"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-6xl mx-auto mt-12 pt-6 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#6b7280] gap-4"
+      >
+        <span
+          >©
+          <!-- -->2026<!-- -->
+          Gonzalo Morales.
+          <!-- -->Diseño independiente, sin plantillas genéricas.</span
+        ><span class="font-mono-code"
+          >Diseño, código &amp; dirección creativa</span
+        >
+      </div>
+    </footer>
+    <script data-tsr-stream-part="">
+      (self.$R = self.$R || {})["tsr"] = [];
+      self.$_TSR = {
+        h() {
+          ((this.hydrated = !0), this.c());
+        },
+        e() {
+          ((this.streamEnded = !0), this.c());
+        },
+        c() {
+          this.hydrated &&
+            this.streamEnded &&
+            (delete self.$_TSR, delete self.$R.tsr);
+        },
+        p(e) {
+          this.initialized ? e() : this.buffer.push(e);
+        },
+        buffer: [],
+      };
+      $_TSR.router = (($R) =>
+        ($R[0] = {
+          manifest: ($R[1] = {
+            routes: ($R[2] = {
+              __root__: ($R[3] = {
+                preloads: ($R[4] = ["/assets/index-D5eGLUbL.js"]),
+                scripts: ($R[5] = [
+                  ($R[6] = {
+                    attrs: ($R[7] = {
+                      type: "module",
+                      async: !0,
+                      src: "/assets/index-D5eGLUbL.js",
+                    }),
+                  }),
+                ]),
+                css: ($R[8] = ["/assets/index-sXXrICXK.css"]),
+              }),
+              "/": ($R[9] = {
+                preloads: ($R[10] = [
+                  "/assets/index-CXnmn3Zg.js",
+                  "/assets/portfolioLocalization-Co5AGJjT.js",
+                  "/assets/ContactSection-BdVqaqxC.js",
+                  "/assets/CvModal-g9lflYpl.js",
+                  "/assets/ProjectsSection-DjQ77iu3.js",
+                  "/assets/layers-C9xq0E23.js",
+                ]),
+              }),
+            }),
+          }),
+          matches: ($R[11] = [
+            ($R[12] = {
+              i: "__root__",
+              u: 1792593638741,
+              s: "success",
+              ssr: !0,
+            }),
+            ($R[13] = { i: "", u: 1792593638741, s: "success", ssr: !0 }),
+          ]),
+        }))($R["tsr"]);
+      $_TSR.e();
+      {
+        let s = document.currentScript,
+          p;
+        while (
+          (p = s.previousElementSibling) &&
+          p.hasAttribute("data-tsr-stream-part")
+        )
+          p.remove();
+        s.remove();
+      }
+    </script>
+    <script type="module" async="" src="/assets/index-D5eGLUbL.js"></script>
+    <script>
+      document.currentScript.remove(); /*$tsr-stream-boundary*/
+    </script>
   </body>
 </html>
+<script
+  async
+  src="/.netlify/scripts/hud?variant=owner-private"
+  data-nf-variant="owner-private"
+  data-netlify-site-id="f810d195-e5ed-4b19-8136-5dac69b1db9c"
+  data-app-host="app.netlify.com"
+></script>
