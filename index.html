@@ -7,28 +7,6 @@
       rel="preload"
       as="image"
       href="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/960px-Adobe_Photoshop_CC_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/1280px-Adobe_After_Effects_CC_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="https://www.nicepng.com/png/full/321-3217920_cinema-4d-logo-maxon-cinema-4d-logo-vector.png"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="https://cdn.simpleicons.org/wordpress/21759B"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="https://cdn.simpleicons.org/html5/E34F26"
-    />
-    <link
       rel="preload"
       as="image"
       href="https://cdn.simpleicons.org/php/777BB4"
@@ -43,6 +21,8 @@
       href="./styles.css"
       data-precedence="default"
     />
+    <script src="./language.js" defer></script>
+    <script src="./interactions.js" defer></script>
     <title>
       Gonzalo Morales — Portfolio de Diseño Gráfico y creatividad digital
     </title>
@@ -90,7 +70,7 @@
       >
         <a
           class="group flex items-center gap-3 text-white transition-opacity hover:opacity-90 active"
-          href="/"
+          href="#inicio"
           data-status="active"
           aria-current="page"
           ><div
@@ -113,27 +93,27 @@
           class="hidden md:flex items-center gap-1 bg-[#111b27]/80 p-1.5 rounded-full border border-white/10 shadow-inner"
         >
           <a
-            href="/#inicio"
+            href="#inicio"
             class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
             >Inicio</a
           ><a
-            href="/#sobre-mi"
+            href="#sobre-mi"
             class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
             >Sobre mí</a
           ><a
-            href="/#herramientas"
+            href="#herramientas"
             class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
             >Herramientas</a
           ><a
-            href="/#proyectos"
+            href="#proyectos"
             class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
             >Proyectos</a
           ><a
-            href="/#experiencia"
+            href="#experiencia"
             class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
             >Experiencia</a
           ><a
-            href="/#contacto"
+            href="#contacto"
             class="px-4 py-1.5 text-xs font-medium text-[#9ca3af] hover:text-white rounded-full hover:bg-white/[0.06] transition-all"
             >Contacto</a
           >
@@ -148,7 +128,7 @@
             ><span class="text-[11px] text-[#d1d5db]">Disponible</span>
           </div>
           <a
-            href="/#contacto"
+            href="#contacto"
             class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-white text-black hover:bg-[#78b8f2] hover:text-white transition-all duration-200 active:scale-95 shadow-sm"
             ><span>Hablemos</span
             ><svg
@@ -190,28 +170,6 @@
               EN
             </button>
           </div>
-          <button
-            aria-label="Abrir menú"
-            class="md:hidden p-2 rounded-lg bg-white/[0.05] border border-white/10 text-[#d1d5db] hover:text-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-menu"
-              aria-hidden="true"
-            >
-              <path d="M4 5h16"></path>
-              <path d="M4 12h16"></path>
-              <path d="M4 19h16"></path>
-            </svg>
-          </button>
         </div>
       </div>
     </header>
@@ -270,6 +228,8 @@
               </div>
               <div class="flex items-center gap-2">
                 <button
+                  type="button"
+                  data-action="copy-email"
                   class="group inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 text-xs font-mono-code text-[#9ca3af] hover:text-white transition-all cursor-pointer"
                   title="Copiar dirección de correo"
                 >
@@ -309,10 +269,11 @@
                   gráfico freelance · Granada</span
                 >
                 <h1
+                  aria-label="Gonzalo Morales"
                   class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white leading-[0.98]"
                 >
-                  Gonzalo
-                  <span class="font-serif-italic font-normal text-[#a9d4fb]"
+                  <span class="hero-name__first" aria-hidden="true">Gonzalo</span>
+                  <span class="hero-name__last font-serif-italic font-normal text-[#a9d4fb]" aria-hidden="true"
                     >Morales</span
                   >
                 </h1>
@@ -344,6 +305,9 @@
                     <path d="M12 5v14"></path>
                     <path d="m19 12-7 7-7-7"></path></svg></a
                 ><button
+                  type="button"
+                  data-action="print-cv"
+                  data-cv-mode="preview"
                   class="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-white/[0.05] hover:bg-white/[0.1] border border-white/10 text-white font-medium text-sm transition-all active:scale-[0.98] cursor-pointer"
                 >
                   <svg
@@ -742,21 +706,37 @@
                 </p>
               </div>
               <div
-                class="flex flex-wrap gap-2 p-1.5 bg-[#111b27] rounded-xl border border-white/[0.08]"
+                class="category-filters flex flex-wrap gap-2 p-1.5 bg-[#111b27] rounded-xl border border-white/[0.08]"
               >
                 <button
+                  type="button"
+                  data-filter-group="tools"
+                  data-filter="all"
+                  aria-pressed="true"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer bg-white text-black shadow-sm font-semibold"
                 >
                   Todo el stack (9)</button
                 ><button
+                  type="button"
+                  data-filter-group="tools"
+                  data-filter="design"
+                  aria-pressed="false"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
                 >
                   Diseño Gráfico &amp; Adobe</button
                 ><button
+                  type="button"
+                  data-filter-group="tools"
+                  data-filter="web"
+                  aria-pressed="false"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
                 >
                   Web &amp; Maquetación</button
                 ><button
+                  type="button"
+                  data-filter-group="tools"
+                  data-filter="workflow"
+                  aria-pressed="false"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
                 >
                   Flujo &amp; Brand
@@ -1734,21 +1714,37 @@
                 </p>
               </div>
               <div
-                class="flex flex-wrap gap-2 p-1.5 bg-[#111b27] rounded-xl border border-white/[0.08]"
+                class="category-filters flex flex-wrap gap-2 p-1.5 bg-[#111b27] rounded-xl border border-white/[0.08]"
               >
                 <button
+                  type="button"
+                  data-filter-group="projects"
+                  data-filter="all"
+                  aria-pressed="true"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer bg-white text-black shadow-sm font-semibold"
                 >
                   Todos los proyectos (1)</button
                 ><button
+                  type="button"
+                  data-filter-group="projects"
+                  data-filter="web"
+                  aria-pressed="false"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
                 >
                   Web &amp; Exploración</button
                 ><button
+                  type="button"
+                  data-filter-group="projects"
+                  data-filter="design"
+                  aria-pressed="false"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
                 >
                   Diseño Gráfico</button
                 ><button
+                  type="button"
+                  data-filter-group="projects"
+                  data-filter="creative"
+                  aria-pressed="false"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-[#9ca3af] hover:text-white hover:bg-white/[0.05]"
                 >
                   Creatividad Digital
@@ -1819,6 +1815,8 @@
                   class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2"
                 >
                   <button
+                    type="button"
+                    data-action="project-details"
                     class="inline-flex items-center gap-1.5 text-xs font-medium text-white hover:text-[#78b8f2] transition-colors cursor-pointer"
                   >
                     <svg
@@ -1897,6 +1895,9 @@
                 </p>
               </div>
               <button
+                type="button"
+                data-action="print-cv"
+                data-cv-mode="print"
                 class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 text-white font-medium text-xs transition-all cursor-pointer self-start md:self-auto"
               >
                 <svg
@@ -1938,17 +1939,17 @@
                 </svg>
               </button>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-              <div class="lg:col-span-8 space-y-8 relative">
+            <div class="experience-layout grid grid-cols-1 lg:grid-cols-12 gap-12">
+              <div class="experience-timeline lg:col-span-8 space-y-8 relative">
                 <div
-                  class="absolute top-4 bottom-4 left-[15px] sm:left-[19px] w-[1px] bg-white/[0.08] pointer-events-none"
+                  class="experience-timeline__line absolute top-4 bottom-4 left-[15px] sm:left-[19px] w-[1px] bg-white/[0.08] pointer-events-none"
                 ></div>
-                <div class="relative pl-10 sm:pl-12 group">
+                <div class="experience-entry relative pl-10 sm:pl-12 group">
                   <div
-                    class="absolute left-2 sm:left-3 top-1.5 w-3.5 h-3.5 rounded-full border-2 transition-all -translate-x-1/2 bg-[#83d3cd] border-[#83d3cd]/40 ring-4 ring-[#83d3cd]/15"
+                    class="experience-entry__marker absolute left-2 sm:left-3 top-1.5 w-3.5 h-3.5 rounded-full border-2 transition-all -translate-x-1/2 bg-[#83d3cd] border-[#83d3cd]/40 ring-4 ring-[#83d3cd]/15"
                   ></div>
                   <div
-                    class="p-6 rounded-2xl bg-[#111b27] border border-white/[0.07] hover:border-white/20 transition-all"
+                    class="experience-card p-6 rounded-2xl bg-[#111b27] border border-white/[0.07] hover:border-white/20 transition-all"
                   >
                     <div
                       class="flex flex-wrap items-center justify-between gap-2 mb-2"
@@ -2080,9 +2081,9 @@
                   </div>
                 </div>
               </div>
-              <div class="lg:col-span-4 space-y-6">
+              <div class="experience-sidebar lg:col-span-4 space-y-6">
                 <div
-                  class="p-6 rounded-2xl bg-[#111b27] border border-white/[0.07] space-y-6"
+                  class="experience-sidebar__education p-6 rounded-2xl bg-[#111b27] border border-white/[0.07] space-y-6"
                 >
                   <div
                     class="flex items-center gap-2 pb-4 border-b border-white/[0.08]"
@@ -2136,7 +2137,7 @@
                   </div>
                 </div>
                 <div
-                  class="p-6 rounded-2xl bg-gradient-to-br from-[#78b8f2]/10 to-transparent border border-[#78b8f2]/20 space-y-3"
+                  class="experience-sidebar__cv p-6 rounded-2xl bg-gradient-to-br from-[#78b8f2]/10 to-transparent border border-[#78b8f2]/20 space-y-3"
                 >
                   <h4 class="text-sm font-bold text-white">
                     ¿Necesitas el currículum en PDF?
@@ -2146,6 +2147,9 @@
                     el detalle de mi formación, herramientas y experiencia.
                   </p>
                   <button
+                    type="button"
+                    data-action="print-cv"
+                    data-cv-mode="preview"
                     class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white text-black font-semibold text-xs hover:bg-[#78b8f2] hover:text-white transition-all cursor-pointer"
                   >
                     <svg
@@ -2216,6 +2220,7 @@
                       >moccapsd@gmail.com</span
                     ><button
                       type="button"
+                      data-action="copy-email"
                       class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/[0.06] hover:bg-white/15 border border-white/10 text-xs font-mono-code text-[#d1d5db] hover:text-white transition-all cursor-pointer shrink-0"
                     >
                       <svg
@@ -2436,6 +2441,7 @@
           <div class="flex items-center gap-4">
             <a
               href="https://github.com"
+              hidden
               target="_blank"
               rel="noopener noreferrer"
               class="p-2 rounded-full bg-white/[0.04] border border-white/10 text-[#9ca3af] hover:text-white hover:border-white/30 transition-colors"
@@ -2459,6 +2465,7 @@
                 <path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a
             ><a
               href="https://linkedin.com"
+              hidden
               target="_blank"
               rel="noopener noreferrer"
               class="p-2 rounded-full bg-white/[0.04] border border-white/10 text-[#9ca3af] hover:text-white hover:border-white/30 transition-colors"
@@ -2483,6 +2490,7 @@
                 <circle cx="4" cy="4" r="2"></circle></svg></a
             ><a
               href="https://dribbble.com"
+              hidden
               target="_blank"
               rel="noopener noreferrer"
               class="p-2 rounded-full bg-white/[0.04] border border-white/10 text-[#9ca3af] hover:text-white hover:border-white/30 transition-colors"
@@ -2505,12 +2513,15 @@
                 <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
                 <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path></svg
             ></a>
+            <a href="https://www.behance.net/moccapsd" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="mailto:moccapsd@gmail.com">Email</a>
           </div>
           <div
             class="flex items-center gap-3 text-xs font-mono-code text-[#6b7280]"
           >
             <span>Granada, ES (UTC+1)</span><span>·</span
-            ><button
+            ><a
+              href="#inicio"
               class="inline-flex items-center gap-1 hover:text-white transition-colors"
             >
               <span>Volver arriba</span
@@ -2530,7 +2541,7 @@
                 <path d="m5 12 7-7 7 7"></path>
                 <path d="M12 19V5"></path>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
