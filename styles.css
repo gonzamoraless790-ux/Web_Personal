@@ -1,0 +1,231 @@
+﻿:root {
+  --bg: #0b0f13;
+  --panel: #eef1f3;
+  --panel-2: #f7f8f8;
+  --titlebar: #55d0d5;
+  --titlebar-text: #0d1a1d;
+  --text: #30353b;
+  --muted: #5d6066;
+  --warning: #e75d54;
+  --warning-soft: #f4dfe1;
+  --shadow: rgba(0, 0, 0, 0.48);
+  --button: rgba(255, 255, 255, 0.66);
+  --button-border: rgba(35, 48, 58, 0.32);
+  --button-strong: #1a7493;
+  --button-strong-text: #eaf7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.04)),
+    radial-gradient(circle at 15% 78%, rgba(62, 190, 191, 0.08), transparent 22%),
+    radial-gradient(circle at 80% 32%, rgba(62, 190, 191, 0.06), transparent 18%);
+  pointer-events: none;
+}
+
+.terminal-sheen {
+  position: absolute;
+  left: 36px;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: rgba(205, 225, 235, 0.72);
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
+.terminal-sheen .line {
+  display: flex;
+  gap: 12px;
+  opacity: 0.75;
+}
+
+.dialog {
+  position: relative;
+  width: min(760px, calc(100vw - 54px));
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 28px 42px var(--shadow);
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+  padding: 0 16px 0 18px;
+  background: var(--titlebar);
+  border-bottom: 1px solid rgba(29, 65, 74, 0.18);
+}
+
+.titlebar span {
+  color: var(--titlebar-text);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.close-button {
+  border: none;
+  background: transparent;
+  color: rgba(16, 22, 26, 0.8);
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  transform: translateY(-1px);
+}
+
+.dialog-body {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 120px;
+  padding: 18px 22px 16px 20px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.warning-icon {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.warning-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid var(--warning);
+}
+
+.warning-icon span {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.warning-icon span::before,
+.warning-icon span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 4px;
+  background: var(--warning);
+  border-radius: 2px;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.warning-icon span::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.dialog-body p {
+  margin: 0;
+  font-size: clamp(16px, 1.7vw, 18px);
+  line-height: 1.5;
+  color: #2e3339;
+  font-weight: 500;
+  max-width: 560px;
+}
+
+.dialog-body strong {
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 0 18px 20px 18px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+button {
+  appearance: none;
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  min-width: 124px;
+  height: 38px;
+  background: var(--button);
+  color: #20252b;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+button.primary {
+  background: linear-gradient(180deg, #ecf9ff 0%, #dceef4 100%);
+  border-color: rgba(53, 118, 146, 0.7);
+  color: #0d2438;
+}
+
+@media (max-width: 540px) {
+  .dialog {
+    width: min(480px, calc(100vw - 18px));
+  }
+
+  .dialog-body {
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 16px 10px;
+  }
+
+  .warning-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 16px;
+  }
+
+  button {
+    min-width: 112px;
+  }
+}
